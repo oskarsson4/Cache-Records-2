@@ -1,0 +1,165 @@
+/*-----------------------------------------*/
+.ArtistsContent{
+    grid-row: 3;
+    padding-bottom: 260px;
+}
+/*Här bästämmer vi att bilderna i artiklarna skall vara 100% width av skärmen*/
+article img{
+    width: 90%;
+    border: 1px solid lightgray;
+    border-radius: 50px;
+    padding: 5px;
+    
+}
+  
+
+
+#Artistsid{
+    padding-bottom: 50px;
+    font-size: 3em;
+    text-transform: capitalize;
+}
+
+.articles{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    grid-gap: 2em;
+    grid-row: 4;
+    padding:30px;
+}
+/*---------------------------------*/
+
+
+/*Den här koden gör så att när användaren trycker på ett menuval, 
+kommer sidan scrolla ner till den plats du vill komma till fast med en smooth inställning*/
+html{
+    scroll-behavior: smooth;
+}
+body, html{
+    height: 100%;
+    
+}
+body{
+    margin: 0;
+    text-align: center;
+    background-color: black;
+    color: lightgrey;
+}
+/*Här skapas griden för hela weebsidan*/
+.main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    grid-gap: 1em;
+}
+
+/*Start av kod för header*/
+header{
+    grid-row: 1;
+    text-align: right;
+}
+
+header h1{
+    text-align: left;
+    font-size: 4em;
+    padding-left: 10px;
+}
+
+header nav ul li{
+    display: inline;
+    font-size: 2em;
+    padding-right: 10px;
+}
+
+.menu{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 100px;
+    
+}
+
+header nav a:visited{
+    color: lightgray;
+}
+
+header nav a:link{
+    color: lightgray;
+    text-decoration: none;
+}
+
+header nav a:hover{
+    color: lightgray;
+}
+
+header nav a:active{
+    color: lightgray;
+}
+/* Slut på kod av header*/
+
+/*En bakgrundsbild för hela framsidan*/
+.background{
+    background-image: url("/img/pexels-photo-1105666.jpeg");
+    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*Css för rubriken*/
+.Headline{
+    font-size: 3em;
+    padding-top: 200px;
+    padding-bottom: 500px;
+    grid-row: 2;
+    color:black;
+}
+
+/*Den här classen är våra artiklar där våra artister finns*/
+
+    
+.Release{
+    padding: 20px;
+    grid-row: 5;
+    padding: 0px 350px 500px 350px;
+}
+
+/*Här bestäms hur stora alla rubrikerna skall vara och vilken padding de ska ha*/
+#Releases, #AboutUs, #TheContact{
+    padding-bottom: 50px;
+    font-size: 3em;
+    
+}
+
+.About{
+    padding: 20px;
+    grid-row: 6;
+    padding: 0px 350px 500px 350px;
+}
+
+.Contact{
+    padding: 20px;
+    grid-row: 7;
+    padding-bottom: 100px;
+}
+
+section ul li{
+    
+    display: inline;
+    list-style-type: none;
+    font-size: 30px;
+    padding: 30px;
+    text-align: center;
+    
+}
+
+section ul li img{
+    padding-right: 10px;
+}
+
+footer{
+    grid-row: 8;
+}
+
+
+
+

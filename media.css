@@ -1,0 +1,37 @@
+/*Om storleken på skärmen blir mindre än 1200px kommer padding bli 0 för dessa element*/
+@media only screen and (max-width: 1200px){
+    
+    .articles, .Release, .About, .Contact{
+        padding: 0px;
+    }
+}
+
+/*Om storleken på skärmen blir mindre än 400px kommer rubrikens font-storlek bli 2em*/
+@media only screen and (max-width: 400px){
+    
+    .Headline{
+        font-size: 2em;
+    }
+}
+
+/*Om skärmen blir mindre än 600px kommer font-storleken på menu bli mindre*/
+@media only screen and (max-width: 600px){
+    
+    header nav ul li{
+        font-size: 20px;
+        padding-right: 25px;
+    }
+}
+
+/*Om skärmen blir mindre än 1100px kommer listan i section bli mindre och lägga sig på en horisontell linje istället för vertikal.*/
+@media only screen and (max-width: 1100px){
+    
+    section ul li{
+        display: block;
+        list-style-type: none;
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+
+
